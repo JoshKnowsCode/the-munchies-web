@@ -447,10 +447,7 @@ export default function App() {
                  <p className="text-[10px] font-black uppercase tracking-widest mb-1">Combos</p>
                  <p className="text-lg font-black italic">All combos include a fresh soda!</p>
                </div>
-               <div className="bg-black p-6 text-white skew-x-[-4deg]">
-                 <p className="text-[10px] font-black uppercase tracking-widest mb-1 text-munchies-orange">Super B🏈wl Specials</p>
-                 <p className="text-base font-black italic">Check our online menu for seasonal specials & limited-time deals!</p>
-               </div>
+
             </div>
           </div>
         </div>
