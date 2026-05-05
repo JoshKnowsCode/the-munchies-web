@@ -289,7 +289,7 @@ export default function App() {
               
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6" id="order">
                 <a 
-                  href="#" 
+                  href="https://www.doordash.com/store/the-munchies-brooklyn-22977770/12698324/" 
                   className="bg-black text-white px-6 md:px-12 py-4 md:py-6 font-black text-base md:text-xl text-center hover:bg-munchies-orange transition-all flex items-center justify-center gap-3 border-b-4 md:border-b-8 border-munchies-blue"
                 >
                   <ShoppingBag className="w-5 h-5 md:w-7 md:h-7" />
@@ -298,8 +298,8 @@ export default function App() {
                 <div className="flex gap-2">
                    <div className="bg-white p-3 md:p-4 border-2 border-munchies-blue flex flex-col justify-center min-w-[140px] md:min-w-[180px]">
                      <p className="text-[8px] md:text-[10px] font-black uppercase text-munchies-blue tracking-widest">Late Night</p>
-                     <p className="text-[9px] md:text-xs font-bold text-gray-900 leading-tight">SUN-THU: 3:45 AM</p>
-                     <p className="text-[9px] md:text-xs font-bold text-gray-900 leading-tight">FRI-SAT: 4:45 AM</p>
+                     <p className="text-[9px] md:text-xs font-bold text-gray-900 leading-tight">SUN-THU: TILL 3:45 AM</p>
+                     <p className="text-[9px] md:text-xs font-bold text-gray-900 leading-tight">FRI-SAT: TILL 4:45 AM</p>
                    </div>
                 </div>
               </div>
