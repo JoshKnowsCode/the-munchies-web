@@ -27,7 +27,7 @@ const NAV_LINKS = [
   { name: 'Menu', href: '#menu' },
   { name: 'About', href: '#about' },
   { name: 'Hours', href: '#hours' },
-  { name: 'Order Now', href: '#order', primary: true },
+  { name: 'Order Now', href: 'https://www.doordash.com/store/the-munchies-brooklyn-22977770/12698324/', primary: true },
 ];
 
 interface MenuItem {
@@ -335,7 +335,7 @@ export default function App() {
       <section className="relative min-h-[100svh] flex flex-col justify-center overflow-hidden border-4 md:border-[16px] border-munchies-blue mx-2 md:mx-4 mt-2 md:mt-4" id="hero">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=2070" 
+            src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/7430e8e1-4d77-438b-81e5-cc4a7fc93989.jpg" 
             alt="Delicious street food" 
             className="w-full h-full object-cover grayscale brightness-50"
             referrerPolicy="no-referrer"
@@ -390,7 +390,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="relative order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=1444" 
+                src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGQ76RYaMhLAem1p7iWXjGeke-YEgy62l-9xyfYLFcofgj07rL7gF-5z8i1sFMimyzXrH1KCikQ72r-YDAAnROBt-dtSWC2tupYLA07yfBQlma4Z9dX76-lQAQTc5yvV9yB7xHfdoEP9Nw=s680-w680-h510-rw" 
                 alt="Kitchen prep" 
                 className="shadow-[12px_12px_0_0_#0033A0] md:shadow-[40px_40px_0_0_#0033A0] grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
