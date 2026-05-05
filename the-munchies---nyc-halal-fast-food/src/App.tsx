@@ -47,63 +47,96 @@ interface MenuCategory {
 const MENU_CATEGORIES: MenuCategory[] = [
   {
     id: 'rice-platters',
-    title: 'Rice Platters',
-    description: 'All platters come with 2 sides: salad, fries, hummus, or chopped pita',
+    title: 'Munchy Rice Platters',
+    description: 'All platters come with 2 sides of your choice: fresh salad, seasoned fries, fresh hummus, or chopped pita bread',
     items: [
-      { name: 'Chicken Over Rice', price: '$14.99' },
-      { name: 'Lamb Over Rice', price: '$14.99' },
-      { name: 'Mix Over Rice', price: '$14.99', sub: 'Chicken + Lamb' },
-      { name: 'Falafel Over Rice', price: '$14.99' },
+      { name: 'Chicken Over Rice', price: '$14.99', description: 'Savory marinated chicken, grilled and served on a bed of aromatic Basmati Rice' },
+      { name: 'Lamb Over Rice', price: '$14.99', description: 'Tender lamb served on a bed of aromatic basmati rice' },
+      { name: 'Mix Over Rice', price: '$14.99', sub: 'Chicken + Lamb', description: 'Tender lamb meets savory chicken on a bed of aromatic basmati rice' },
+      { name: 'Falafel Over Rice', price: '$14.99', description: 'Crispy falafel served over fluffy basmati rice, offering a delightful blend of flavors and textures' },
+      { name: 'Crispy Chicken Over Rice', price: '$14.99', description: 'Chicken breaded and fried till golden brown, chopped and laid on a bed of basmati rice' },
+      { name: 'Fish Over Rice', price: '$14.99', description: '2 pieces of freshly breaded fish, fried and served on a bed of aromatic basmati rice' },
+      { name: 'Shrimp Over Rice', price: '$14.99', description: '6 pieces of breaded fresh jumbo shrimp, served on a bed of aromatic basmati rice' },
     ],
   },
   {
     id: 'gyro',
     title: 'Gyro',
+    description: 'Served on warm pita with fresh vegetables and sauce of your choice',
     items: [
-      { name: 'Chicken Gyro', price: '' },
-      { name: 'Lamb Gyro', price: '' },
-      { name: 'Mix Meat Gyro', price: '' },
-      { name: 'Falafel Gyro Combo', price: '' },
+      { name: 'Chicken Gyro', price: '$12.99' },
+      { name: 'Lamb Gyro', price: '$12.99' },
+      { name: 'Mix Meat Gyro', price: '$12.99', sub: 'Chicken + Lamb' },
+      { name: 'Falafel Gyro', price: '$12.99' },
+      { name: 'Fish Gyro', price: '$12.99' },
+      { name: 'Chicken Gyro Combo', price: '$17.99', description: 'Gyro + fries + soda' },
+      { name: 'Lamb Gyro Combo', price: '$17.99', description: 'Gyro + fries + soda' },
+      { name: 'Mix Gyro Combo', price: '$17.99', description: 'Gyro + fries + soda' },
+      { name: 'Falafel Gyro Combo', price: '$17.99', description: 'Gyro + fries + soda' },
+    ],
+  },
+  {
+    id: 'wings',
+    title: 'Authentic Wings',
+    description: '20+ bold flavors — Buffalo, Honey Garlic, Mango Habanero, Jamaican Jerk, Lemon Pepper, BBQ, Sweet Chili & more',
+    items: [
+      { name: 'Wings Boneless Only', price: '$8.99' },
+      { name: 'Wings Traditional Only', price: '$11.99' },
+      { name: 'Wings Boneless Combo', price: '$13.99', description: 'Boneless wings + fries + soda' },
+      { name: 'Wings Traditional Combo', price: '$17.99', description: 'Traditional wings + fries + soda' },
     ],
   },
   {
     id: 'sandwiches',
     title: 'Sandwiches & Heroes',
     items: [
-      { name: 'Chopped Cheese on Hero', price: '$12.99', description: '10oz fresh ground beef, grilled onions, peppers, 2 cheeses, signature Munchies sauce' },
-      { name: 'Crispy Chicken Sandwich', price: '' },
-      { name: 'Philly Cheese Steak', price: '' },
+      { name: 'Chopped Cheese on Hero', price: '$13.99', description: '10oz fresh ground beef, grilled onions, peppers, 2 cheeses, signature Munchies sauce' },
+      { name: 'Crispy Chicken Sandwich', price: '$12.99' },
+      { name: 'Philly Cheese Steak', price: '$13.99', description: '10oz fresh steak, sautéed mushrooms, onions, peppers, smothered in melted cheese on a hero roll' },
+      { name: 'Whiting Fish on Hero', price: '$12.99' },
+      { name: 'Chopped Cheese Combo', price: '$17.99', description: 'Chopped Cheese + fries + soda' },
+      { name: 'Crispy Chicken Combo', price: '$16.99', description: 'Crispy Chicken Sandwich + fries + soda' },
     ],
   },
   {
-    id: 'wings',
-    title: 'Authentic Wings',
-    description: '20+ bold flavors available',
+    id: 'tenders',
+    title: 'Freshly Hand Breaded Chicken Tenders',
+    description: 'Juicy crispy white meat chicken tenders, hand-breaded fresh to order',
     items: [
-      { name: 'Boneless Wings', price: '$8.99' },
-      { name: 'Buffalo Wings', price: '' },
-      { name: 'Honey Garlic Wings', price: '' },
-      { name: 'Mango Habanero Wings', price: '' },
-      { name: 'Jamaican Jerk Wings', price: '' },
+      { name: 'Chicken Tenders Only', price: '$10.99' },
+      { name: 'Chicken Tenders Combo', price: '$14.99', description: 'Tenders + fries + soda' },
     ],
   },
   {
-    id: 'tenders-wraps',
-    title: 'Tenders & Wraps',
+    id: 'wraps',
+    title: 'Wraps',
     items: [
-      { name: 'Freshly Hand Breaded Chicken Tenders', price: '' },
-      { name: 'Chicken Wrap', price: '' },
-      { name: 'Lamb Wrap', price: '' },
+      { name: 'Chicken Wrap', price: '$12.99' },
+      { name: 'Lamb Wrap', price: '$12.99' },
+      { name: 'Mix Wrap', price: '$12.99', sub: 'Chicken + Lamb' },
+      { name: 'Falafel Wrap', price: '$11.99' },
     ],
   },
   {
     id: 'seafood',
     title: 'Seafood',
     items: [
-      { name: 'Fried Fish', price: '' },
-      { name: 'Fish Over Rice', price: '' },
-      { name: 'Fish & Chips', price: '' },
-      { name: '2pc Fish + 6pc Hand Breaded Shrimp', price: '' },
+      { name: 'Fried Fish', price: '$10.99' },
+      { name: 'Fish & Chips', price: '$12.99' },
+      { name: '2pc Fish + 6pc Hand Breaded Shrimp', price: '$14.99' },
+      { name: 'Shrimp Only', price: '$11.99', description: '6pc hand breaded jumbo shrimp' },
+    ],
+  },
+  {
+    id: 'salads',
+    title: 'Fresh Salads',
+    items: [
+      { name: 'Halal Chicken Salad', price: '$11.99', description: 'Tender white meat chicken mixed with fresh greens' },
+      { name: 'Chicken & Lamb Salad', price: '$11.99', description: 'Tender chicken and lamb mixed with fresh greens' },
+      { name: 'Lamb Salad', price: '$11.99', description: 'Tender lamb, mixed greens, and a hint of Mediterranean flair' },
+      { name: 'Falafel Salad', price: '$10.99', description: 'Crisp falafel mixed with fresh greens and herbs' },
+      { name: 'Fish Salad', price: '$11.99', description: 'Crisp greens topped with golden fish fillets, shredded carrots, black olives, banana peppers, green onions, and shredded cheese with a lime wedge' },
+      { name: 'Garden Salad', price: '$7.99', description: 'Fresh mix of greens' },
     ],
   },
   {
@@ -111,10 +144,51 @@ const MENU_CATEGORIES: MenuCategory[] = [
     title: 'Sides',
     items: [
       { name: 'Mozzarella Sticks', price: '$6.49' },
-      { name: 'Seasoned Fries', price: '' },
-      { name: 'Fresh Hummus', price: '' },
-      { name: 'Chopped Pita', price: '' },
-      { name: 'Breaded Okra', price: '' },
+      { name: 'Seasoned Fries', price: '$4.99' },
+      { name: 'Fresh Hummus', price: '$3.99' },
+      { name: 'Chopped Pita', price: '$2.99' },
+      { name: 'Breaded Okra', price: '$5.99' },
+      { name: 'Corn Nuggets', price: '$5.99' },
+      { name: 'Onion Rings', price: '$5.99' },
+    ],
+  },
+  {
+    id: 'sauces',
+    title: 'Sauces',
+    description: 'Extra sauce on the side',
+    items: [
+      { name: 'White Sauce', price: '$0.99' },
+      { name: 'Hot Sauce', price: '$0.99' },
+      { name: 'Munchies Signature Sauce', price: '$0.99' },
+      { name: 'Sweet Chili Sauce', price: '$0.99' },
+      { name: 'BBQ Sauce', price: '$0.99' },
+      { name: 'Honey Garlic Sauce', price: '$0.99' },
+      { name: 'Mango Habanero Sauce', price: '$0.99' },
+      { name: 'Jamaican Jerk Sauce', price: '$0.99' },
+      { name: 'Green Sauce', price: '$0.99' },
+    ],
+  },
+  {
+    id: 'desserts',
+    title: 'Dessert',
+    items: [
+      { name: 'Triple Layer Carrot Cake', price: '$7.99' },
+      { name: 'NYC Cheesecake', price: '$6.99' },
+      { name: 'NY Style Strawberry Cheesecake', price: '$7.99' },
+      { name: 'Layered Chocolate Cake', price: '$7.99', description: 'Addictive ganache sauce with moist cake — arguably the best chocolate cake in Brooklyn' },
+      { name: 'Oreo Mousse Cake', price: '$7.99', description: 'Velvety texture, not too sweet' },
+      { name: 'Tres Leches Sundae Cup', price: '$6.99', description: 'Like a mad tasty pudding cake' },
+    ],
+  },
+  {
+    id: 'beverages',
+    title: 'Beverage',
+    items: [
+      { name: 'Soda Can', price: '$1.99' },
+      { name: '2 Liter Soda', price: '$4.99' },
+      { name: 'Water', price: '$1.50' },
+      { name: 'Juice', price: '$2.99' },
+      { name: "Munchies Juice (Grandma Punch)", price: '$3.00' },
     ],
   },
 ];
@@ -229,7 +303,6 @@ const MenuCard = ({ category }: { category: MenuCategory, key?: string | number 
   <div className="bg-white p-2 transition-all group" id={`menu-cat-${category.id}`}>
     <div className="flex justify-between items-end mb-4 border-b-4 border-munchies-orange pb-2">
       <h3 className="text-2xl font-black text-munchies-blue uppercase tracking-tighter font-display">{category.title}</h3>
-      {category.id === 'rice-platters' && <span className="font-black text-gray-400 text-sm">$14.99</span>}
     </div>
     {category.description && (
       <p className="text-[10px] uppercase font-black text-gray-400 mb-4 tracking-widest">{category.description}</p>
@@ -241,6 +314,9 @@ const MenuCard = ({ category }: { category: MenuCategory, key?: string | number 
             <span className="font-black text-gray-900 text-lg group-hover/item:text-munchies-blue transition-colors uppercase tracking-tight">{item.name}</span>
             {item.price && <span className="font-black text-munchies-orange whitespace-nowrap text-lg italic">{item.price}</span>}
           </div>
+          {item.sub && (
+            <p className="text-[10px] uppercase font-bold text-gray-400 tracking-widest">{item.sub}</p>
+          )}
           {item.description && (
             <p className="text-xs text-slate-500 leading-tight font-medium italic">{item.description}</p>
           )}
@@ -365,37 +441,15 @@ export default function App() {
               <MenuCard key={cat.id} category={cat} />
             ))}
             
-            {/* Special Categories Small Cards */}
-            <div className="flex flex-col gap-12 border-l-4 border-slate-100 pl-8">
-               <div className="group">
-                  <h3 className="text-2xl font-black mb-4 text-munchies-blue uppercase tracking-tight font-display border-b-2 border-munchies-blue pb-1">
-                    Salads
-                  </h3>
-                  <div className="space-y-3 font-bold uppercase tracking-tight italic">
-                    <div className="flex justify-between border-b border-gray-100 pb-1">
-                       <span>Halal Chicken Salad</span>
-                    </div>
-                    <div className="flex justify-between">
-                       <span>Fresh Garden Salad</span>
-                    </div>
-                  </div>
-               </div>
-               <div className="group">
-                  <h3 className="text-2xl font-black mb-4 text-munchies-orange uppercase tracking-tight font-display border-b-2 border-munchies-orange pb-1">
-                    Desserts
-                  </h3>
-                  <div className="space-y-3 font-bold uppercase tracking-tight italic">
-                    <div className="flex justify-between border-b border-gray-100 pb-1">
-                       <span>Triple Layer Carrot Cake</span>
-                    </div>
-                    <div className="flex justify-between">
-                       <span>NYC Cheesecake</span>
-                    </div>
-                  </div>
-               </div>
+            {/* Combos Banner */}
+            <div className="flex flex-col gap-8 border-l-4 border-slate-100 pl-8">
                <div className="bg-munchies-blue p-6 text-white skew-x-[-4deg]">
                  <p className="text-[10px] font-black uppercase tracking-widest mb-1">Combos</p>
                  <p className="text-lg font-black italic">All combos include a fresh soda!</p>
+               </div>
+               <div className="bg-black p-6 text-white skew-x-[-4deg]">
+                 <p className="text-[10px] font-black uppercase tracking-widest mb-1 text-munchies-orange">Super B🏈wl Specials</p>
+                 <p className="text-base font-black italic">Check our online menu for seasonal specials & limited-time deals!</p>
                </div>
             </div>
           </div>
@@ -445,13 +499,13 @@ export default function App() {
                </div>
                
                <div className="grid grid-cols-3 gap-3 md:gap-4">
-                   <a href="#" className="bg-munchies-blue h-20 md:h-24 flex items-center justify-center text-white hover:bg-munchies-orange transition-all skew-x-[-12deg]">
+                   <a href="https://www.instagram.com/bk.munchies/?hl=en" className="bg-munchies-blue h-20 md:h-24 flex items-center justify-center text-white hover:bg-munchies-orange transition-all skew-x-[-12deg]">
                       <Instagram size={28} className="skew-x-[12deg] md:w-[36px] md:h-[36px]" />
                    </a>
-                   <a href="#" className="bg-black h-20 md:h-24 flex items-center justify-center text-white hover:bg-munchies-orange transition-all skew-x-[-12deg]">
+                   <a href="https://www.facebook.com/p/The-Munchies-100083072355806/" className="bg-black h-20 md:h-24 flex items-center justify-center text-white hover:bg-munchies-orange transition-all skew-x-[-12deg]">
                       <Facebook size={28} className="skew-x-[12deg] md:w-[36px] md:h-[36px]" />
                    </a>
-                   <a href="#" className="bg-munchies-orange h-20 md:h-24 flex items-center justify-center text-white hover:bg-munchies-blue transition-all skew-x-[-12deg]">
+                   <a href="https://themunchies.dine.online/locations/3164528?fulfillment=pickup" target="_blank" rel="noopener noreferrer" className="bg-munchies-orange h-20 md:h-24 flex items-center justify-center text-white hover:bg-munchies-blue transition-all skew-x-[-12deg]">
                       <ExternalLink size={28} className="skew-x-[12deg] md:w-[36px] md:h-[36px]" />
                    </a>
                </div>
